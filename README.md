@@ -1,5 +1,13 @@
 # bitflyer node
+
+## Install
+
+```
+npm install --save btcDesushi/bitflyer-promise#develop
+```
+
 ## How to
+
 ```javascript
 const bitflyer = require('bitflyer-promise');
 
@@ -42,7 +50,7 @@ bitflyer.buy({
 .catch(console.error)
 ```
 
-you can retry method if error (or something) happened.  
+you can retry method if error (or something) happened.
 only the last request can issue by retry method(by each private methods.)
 ```javascript
 bitflyer.sendChildOrder({
@@ -57,7 +65,7 @@ bitflyer.sendChildOrder({
 ```
 
 ## Using streaming API
-Currently not supported.  
+Currently not supported.
 Please use [bitflyer-node](https://www.npmjs.com/package/bitflyer-node)
 
 ## Any issues?
