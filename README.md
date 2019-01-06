@@ -1,15 +1,17 @@
 # bitflyer node
 
+本家がts化されたので、jsバージョンとして分岐し、パッケージネームを変えました
+
 ## Install
 
 ```
-npm install --save btcDesushi/bitflyer-promise#develop
+npm install --save btcDesushi/bitflyer-promise-js
 ```
 
 ## How to
 
 ```javascript
-const bitflyer = require('bitflyer-promise');
+const bitflyer = require('bitflyer-promise-js');
 
 bitflyer.getBalance()
 .then(console.log)
